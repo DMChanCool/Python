@@ -3,7 +3,11 @@
 import turtle as t
 
 t.penup()
-t.forward(100)
-t.right(30)
-t.stamp()
+t.speed(5)
+for i in range(12):
+    t.forward(300)
+    t.stamp()
+    t.backward(300)
+    t.right(30)
+
 t.done()
