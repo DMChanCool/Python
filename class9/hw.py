@@ -38,15 +38,14 @@
 
 while True:
     print("1.蘋果汁 2.柳橙汁 3.葡萄汁 4.系統關閉")
-    print("請輸入編號:")
-    j = int(input())
-    if j == 1:
+    j = input("請輸入編號:")
+    if j == "1":
         print("商品是蘋果汁")
-    elif j == 2:
+    elif j == "2":
         print("商品是柳橙汁")
-    elif j == 3:
+    elif j == "3":
         print("商品是葡萄汁")
-    elif j == 4:
+    elif j == "4":
         print("~~系統關閉~~")
         break
     else:
