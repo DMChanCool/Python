@@ -30,6 +30,6 @@ EX:
 num = int(input("請輸入正整數:"))
 if num % 3 == 0:
 
-    elif num % 7 == 0:
+  num % 7 == 0:
 
 print(num)
