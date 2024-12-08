@@ -9,3 +9,17 @@ juice: 20 cups
 french fries: 15 portions
 pizza: 2 pieces
 """
+
+food_list = {"cake": 1, "sandwich": 10, "juice": 20, "french fries": 15, "pizza": 2}
+print("Xiao-Hua's Birthday Party Food List:")
+print("-----------------------------------")
+
+for food, quantity in food_list.items():
+    if food == "cake" or food == "pizza":
+        unit = "piece" if quantity == 1 else "pieces"
+    elif food == "juice":
+        unit = "cup" if quantity == 1 else "cups"
+    else:
+        unit = "portion" if quantity == 1 else "portions"
+
+    print(f"{food}: {quantity} {unit}")
