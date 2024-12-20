@@ -10,16 +10,21 @@ french fries: 15 portions
 pizza: 2 pieces
 """
 
-food_list = {"cake": 1, "sandwich": 10, "juice": 20, "french fries": 15, "pizza": 2}
-print("Xiao-Hua's Birthday Party Food List:")
-print("-----------------------------------")
+a=input((int"cake:"))
+b=input((int"sandwich:"))
+c=input((int"juice:"))
+d=input((int "french fries:"))
+e=input((int "pizza:"))
+food_list = {"cake": a, "sandwich": b, "juice": c, "french fries": d, "pizza": e}
 
 for food, quantity in food_list.items():
-    if food == "cake" or food == "pizza":
-        unit = "piece" if quantity == 1 else "pieces"
-    elif food == "juice":
-        unit = "cup" if quantity == 1 else "cups"
+    if food == "juice":
+        unit = "cups"
+    elif food == "french fries":
+        unit = "portions"
+    elif quantity == 1:
+        unit = "piece"
     else:
-        unit = "portion" if quantity == 1 else "portions"
-
+        unit = "pieces"
+    
     print(f"{food}: {quantity} {unit}")
