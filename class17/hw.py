@@ -40,3 +40,49 @@ Total of all records is 300
 4. Exit system
 Please enter function number:4
 """
+
+
+def add_expense(records, date, amount):
+    if date in records:
+        records[date] += amount
+    else:
+        records[date] = amount
+
+
+def query_expense(records, date):
+    if date in records:
+        return records[date]
+    else:
+        return 0
+
+
+def show_total(records):
+    return sum(records.values())
+
+
+records = {}
+while True:
+    print("1.add new expense record")
+    print("2.query expenses for a specific date")
+    print("3.show total of all records")
+    print("4.exit system")
+    function_number = input("Please enter function number:")
+
+    if function_number == "1":
+        date = input("Please enter date(YYYY-MM-DD):")
+        amount = int(input("Please enter amount:"))
+        add_expense(records, date, amount)
+
+    elif function_number == "2":
+        date = input("Please enter date:")
+        total = query_expense(records, date)
+        print(f"total xpenses for {date} is {total}")
+
+    elif function_number == "3":
+        total = show_total(records)
+        print(f"total of all records is {total}")
+    elif function_number == "4":
+        break
+    else:
+        print("Wrong input")
+        continue
