@@ -26,6 +26,8 @@
 # example: print("hello %.3s" % "hello") # hello hel
 # %10.3s 可以用來格式化字串到10位數，且最大長度為3 'hello' => '       hel'
 # example: print("hello %10.3s" % "hello") # hello        hel
+
+
 # 函式 (Function) - 就像是一個神奇的工具箱，裡面可以放入我們常常需要使用的指令
 # 建立最基本的函式 - 函式名稱後面一定要加上小括號()，並且記得加上冒號:
 def say_hello():
